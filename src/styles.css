@@ -7,3 +7,9 @@
     @apply text-green-500 underline;
   }
 }
+
+@layer components {
+  .purple-button {
+    @apply text-white bg-indigo-500 p-4;
+  }
+}
