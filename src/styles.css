@@ -13,3 +13,9 @@
     @apply text-white bg-indigo-500 p-4;
   }
 }
+
+@layer utilities {
+  .text-green-500 {
+    color: blue;
+  }
+}

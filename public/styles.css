@@ -604,6 +604,7 @@ a {
   --tw-text-opacity: 1;
   color: rgba(16, 185, 129, var(--tw-text-opacity));
   text-decoration: underline;
+  color: blue;
 }
 
 .container {
@@ -32256,6 +32257,10 @@ a {
 
 .content-none {
   content: none;
+}
+
+.text-green-500 {
+  color: blue;
 }
 
 @media (min-width: 640px) {
