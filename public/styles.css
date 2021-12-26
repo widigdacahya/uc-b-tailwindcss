@@ -600,6 +600,12 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+a {
+  --tw-text-opacity: 1;
+  color: rgba(16, 185, 129, var(--tw-text-opacity));
+  text-decoration: underline;
+}
+
 .container {
   width: 100%;
 }
