@@ -1,0 +1,21 @@
+@layer base {
+  h1 {
+    @apply text-5xl font-bold;
+  }
+
+  h2 {
+    @apply text-4xl font-black;
+  }
+}
+
+@layer components {
+  .menu-button {
+    @apply text-white bg-green-500 rounded;
+  }
+}
+
+@layer utilities {
+  .text-green-500 {
+    color: blue;
+  }
+}
