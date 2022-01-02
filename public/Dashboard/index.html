@@ -2,11 +2,12 @@
   <head>
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
   </head>
   <body class="bg-gray-200">
     <div class="flex">
       <!-- Side Navnbar  -->
-      <div class="bg-indigo-900 w-64 h-screen">
+      <div class="bg-indigo-900 w-64">
         <!-- Header -->
         <div class="bg-indigo-800">
           <div class="uppercase text-white text-2xl font-extrabold p-5">Super Crop</div>
@@ -59,13 +60,13 @@
       <!-- Closing Side Navbar -->
 
       <!-- Main Area -->
-      <div class="bg-blue-400 flex-1">
+      <div class="flex-1">
         <!-- Top Navbar -->
         <div class="bg-white px-2 py-0.5 h-18 flex">
           <!-- Left component -->
           <div class="flex p-3 md:w-3/4 sm:w-1/3">
             <img src="images/person.png" class="w-10 h-10" alt="" />
-            <span class="block p-2 font-semibold">Cahyadesthian</span>
+            <span class="block p-2 font-semibold">Caty</span>
           </div>
           <!-- closing left component -->
 
@@ -86,8 +87,331 @@
           <div class="mt-4">Look, here is what's happening with your projects today:</div>
         </div>
         <!-- clossing site banner -->
+
+        <!-- Card First Row -->
+        <div class="flex m-7 space-x-6">
+          <!-- card 1 -->
+          <div class="w-1/2 bg-white p-4">
+            <div class="block">
+              <img src="images/wallet.png" class="w-10 h-10" alt="" />
+            </div>
+            <div class="font-bold text-gray-700 text-xl lowercase">Super plus</div>
+            <div class="uppercase text-gray-400 mt-3 mb-3 font-bold text-sm">sales</div>
+            <span class="font-black text-4xl">$24,757</span>
+            <span class="bg-green-500 py-1 px-2 align-text-top text-sm text-white font-semibold rounded-full">+58%</span>
+            <canvas id="chart1"></canvas>
+          </div>
+
+          <!-- card 2 -->
+          <div class="w-1/2 bg-white p-4">
+            <div class="block">
+              <img src="images/wallet.png" class="w-10 h-10" alt="" />
+            </div>
+            <div class="font-bold text-gray-700 text-xl lowercase">Super pro</div>
+            <div class="uppercase text-gray-400 mt-3 mb-3 font-bold text-sm">sales</div>
+            <span class="font-black text-4xl">$21,722</span>
+            <span class="bg-red-500 py-1 px-2 align-text-top text-sm text-white font-semibold rounded-full">-8%</span>
+            <canvas id="chart2"></canvas>
+          </div>
+        </div>
+        <!-- Closing first row card -->
+
+        <!-- Card Second Row -->
+        <div class="flex m-7 space-x-6">
+          <!-- card 1 -->
+          <div class="w-1/2 bg-white p-4">
+            <div class="block">
+              <img src="images/wallet.png" class="w-10 h-10" alt="" />
+            </div>
+            <div class="font-bold text-gray-700 text-xl lowercase">Super plus</div>
+            <div class="uppercase text-gray-400 mt-3 mb-3 font-bold text-sm">sales</div>
+            <span class="font-black text-4xl">$24,757</span>
+            <span class="bg-green-500 py-1 px-2 align-text-top text-sm text-white font-semibold rounded-full">+58%</span>
+            <canvas id="chart3"></canvas>
+          </div>
+
+          <!-- card 2 -->
+          <div class="w-1/2 bg-white p-4">
+            <div class="block">
+              <img src="images/wallet.png" class="w-10 h-10" alt="" />
+            </div>
+            <div class="font-bold text-gray-700 text-xl lowercase">Super pro</div>
+            <div class="uppercase text-gray-400 mt-3 mb-3 font-bold text-sm">sales</div>
+            <span class="font-black text-4xl">$21,722</span>
+            <span class="bg-red-500 py-1 px-2 align-text-top text-sm text-white font-semibold rounded-full">-8%</span>
+            <canvas id="chart4"></canvas>
+          </div>
+        </div>
+        <!-- Closing second row card -->
+
+        <!--thrid row card -->
+        <div class="flex m-7 space-x-6">
+          <div class="bg-white w-1/3 p-4 divide-y divide-gray-400">
+            <div class="font-black text-l pb-4">Top Countries</div>
+            <canvas id="chart5"></canvas>
+          </div>
+
+          <div class="bg-white w-2/3 p-4">
+            <div class="font-black text-l pb-4">Top Channels</div>
+
+            <div class="flex bg-gray-200 p-2 font-bold text-gray-500 uppercase">
+              <!-- source -->
+              <div class="w-1/3">
+                <div>Source</div>
+              </div>
+
+              <!-- channel -->
+              <div class="w-3/4 space-x-16 flex">
+                <div>visitors</div>
+                <div>revenues</div>
+                <div>sales</div>
+                <div>conversion</div>
+              </div>
+
+              <!--  -->
+            </div>
+
+            <!-- container multi channel -->
+            <div class="divide-y divide-gray-400">
+              <!-- single channel 1 -->
+              <div class="py-2 flex">
+                <!-- left icon name -->
+                <div class="flex w-1/3">
+                  <img src="images/youtube.png" class="w-8 h-8" alt="" />
+                  <div class="pl-2 pt-1">YouTube</div>
+                </div>
+
+                <div class="flex w-3/4 space-x-24 font-semibold">
+                  <div>1.1k</div>
+                  <div class="text-green-500">$21,987</div>
+                  <div>$42,821</div>
+                  <div class="text-blue-500">18%</div>
+                </div>
+              </div>
+              <!-- closing sigle channel 1 -->
+
+              <!-- single channel 2 -->
+              <div class="py-2 flex">
+                <!-- left icon name -->
+                <div class="flex w-1/3">
+                  <img src="images/facebook.png" class="w-8 h-8" alt="" />
+                  <div class="pl-2 pt-1">Facebook</div>
+                </div>
+
+                <div class="flex w-3/4 space-x-24 font-semibold">
+                  <div>1.1k</div>
+                  <div class="text-green-500">$21,987</div>
+                  <div>$42,821</div>
+                  <div class="text-blue-500">18%</div>
+                </div>
+              </div>
+              <!-- closing sigle channel 2 -->
+
+              <!-- single channel 3 -->
+              <div class="py-2 flex">
+                <!-- left icon name -->
+                <div class="flex w-1/3">
+                  <img src="images/github.png" class="w-8 h-8" alt="" />
+                  <div class="pl-2 pt-1">GitHub</div>
+                </div>
+
+                <div class="flex w-3/4 space-x-24 font-semibold">
+                  <div>1.1k</div>
+                  <div class="text-green-500">$21,987</div>
+                  <div>$42,821</div>
+                  <div class="text-blue-500">18%</div>
+                </div>
+              </div>
+              <!-- closing sigle channel 3 -->
+
+              <!-- single channel 4 -->
+              <div class="py-2 flex">
+                <!-- left icon name -->
+                <div class="flex w-1/3">
+                  <img src="images/instagram.png" class="w-8 h-8" alt="" />
+                  <div class="pl-2 pt-1">Instagram</div>
+                </div>
+
+                <div class="flex w-3/4 space-x-24 font-semibold">
+                  <div>1.1k</div>
+                  <div class="text-green-500">$21,987</div>
+                  <div>$42,821</div>
+                  <div class="text-blue-500">18%</div>
+                </div>
+              </div>
+              <!-- closing sigle channel 4 -->
+
+              <!-- single channel 5 -->
+              <div class="py-2 flex">
+                <!-- left icon name -->
+                <div class="flex w-1/3">
+                  <img src="images/youtube.png" class="w-8 h-8" alt="" />
+                  <div class="pl-2 pt-1">YouTube</div>
+                </div>
+
+                <div class="flex w-3/4 space-x-24 font-semibold">
+                  <div>1.1k</div>
+                  <div class="text-green-500">$21,987</div>
+                  <div>$42,821</div>
+                  <div class="text-blue-500">18%</div>
+                </div>
+              </div>
+              <!-- closing sigle channel 5 -->
+
+              <!-- single channel 6 -->
+              <div class="py-2 flex">
+                <!-- left icon name -->
+                <div class="flex w-1/3">
+                  <img src="images/github.png" class="w-8 h-8" alt="" />
+                  <div class="pl-2 pt-1">Github</div>
+                </div>
+
+                <div class="flex w-3/4 space-x-24 font-semibold">
+                  <div>1.1k</div>
+                  <div class="text-green-500">$21,987</div>
+                  <div>$42,821</div>
+                  <div class="text-blue-500">18%</div>
+                </div>
+              </div>
+              <!-- closing sigle channel 6 -->
+
+              <!-- closing yang ada bordernya  -->
+            </div>
+
+            <!-- cliosing 2/3 -->
+          </div>
+        </div>
+        <!-- closing third row card -->
       </div>
+
       <!-- Closing Main Area -->
     </div>
+
+    <script>
+      const ctx = document.getElementById("chart1").getContext("2d");
+      const ctx2 = document.getElementById("chart2").getContext("2d");
+      const ctx3 = document.getElementById("chart3").getContext("2d");
+      const ctx4 = document.getElementById("chart4").getContext("2d");
+      const ctx5 = document.getElementById("chart5").getContext("2d");
+      const myChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "June"],
+          datasets: [
+            {
+              label: "Number of Sales",
+              data: [12, 19, 4, 16, 2, 18],
+              backgroundColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 2)"],
+              borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      //for chart2
+      const myChart2 = new Chart(ctx2, {
+        type: "line",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "June"],
+          datasets: [
+            {
+              label: "Number of Sales",
+              data: [19, 16, 12, 14, 12, 9],
+              backgroundColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 2)"],
+              borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      //for chart 3
+      const myChart3 = new Chart(ctx3, {
+        type: "doughnut",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "June"],
+          datasets: [
+            {
+              label: "Number of Sales",
+              data: [10, 12, 14, 11, 12, 8],
+              backgroundColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 2)"],
+              borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      //chart4
+      const myChart4 = new Chart(ctx4, {
+        type: "radar",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "June"],
+          datasets: [
+            {
+              label: "Number of Sales",
+              data: [10, 13, 14, 17, 20, 8],
+              backgroundColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 2)"],
+              borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      //chart5
+      const myChart5 = new Chart(ctx5, {
+        type: "doughnut",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
+          datasets: [
+            {
+              label: "Number of Sales",
+              data: [12, 19, 4, 16, 2, 18, 11, 14, 13, 15, 16, 10],
+              backgroundColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)"],
+              borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            //to remove the grid line
+            // y: {
+            //   beginAtZero: true,
+            // },
+          },
+        },
+      });
+    </script>
   </body>
 </html>
