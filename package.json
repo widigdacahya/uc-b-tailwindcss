@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tailwind build src/styles.css -o public/styles.css",
     "otherbuild": "tailwind build src/styles2.css -o public/styles2.css",
-    "buildproject": "tailwind build src/stylesproject.css -o public/EstateProject/stylesproject.css"
+    "buildproject": "tailwind build src/stylesproject.css -o public/EstateProject/stylesproject.css",
+    "builddashboardcss": "tailwind build src/stylesdashboard.css -o public/Dashboard/styles.css"
   },
   "keywords": [],
   "author": "",
