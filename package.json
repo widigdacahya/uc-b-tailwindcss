@@ -8,7 +8,8 @@
     "build": "tailwind build src/styles.css -o public/styles.css",
     "otherbuild": "tailwind build src/styles2.css -o public/styles2.css",
     "buildproject": "tailwind build src/stylesproject.css -o public/EstateProject/stylesproject.css",
-    "builddashboardcss": "tailwind build src/stylesdashboard.css -o public/Dashboard/styles.css"
+    "builddashboardcss": "tailwind build src/stylesdashboard.css -o public/Dashboard/styles.css",
+    "buildcssprototype": "tailwind build src/styleprototype.css -o public/EstateProject/Prototype/styles.css"
   },
   "keywords": [],
   "author": "",
